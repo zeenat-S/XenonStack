@@ -1,0 +1,139 @@
+<div class="container-fluid">
+    <!-- header -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-light w-100 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"
+                style="color: #212B67; font-family: Encode Sans SC ; font-size:large; font-weight: 700;">KK
+                Enterperises</a>
+            <button class="navbar-toggler" type="button" (click)=toggle() ngClass="menuShow" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span style="
+                    color: #212B67;
+                    border: none;
+                    ">
+                    <fa-icon [icon]="faBars"></fa-icon>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" [ngClass]="showMenu ? 'show' : 'hide'"
+                id="navbarNav" style="color: #212B67;">
+                <ul class="navbar-nav " style="font-family: Encode Sans SC ; font-size:large; font-weight: 400;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #212B67;">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about" style="color: #212B67;">about us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" style="color: #212B67;">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+
+    <div style="background-image: url(https://th.bing.com/th/id/R.2a3770b09ebdea09ada0bced5b26c6a6?rik=8VnrF8oew0cspw&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f52%2f13%2fB6F0uR.jpg&ehk=scEDwXwpRbXWC8zvwXSC5CBzyf7kZ3KH7zA8MTq1FGA%3d&risl=&pid=ImgRaw&r=0);
+    height: 350px;">
+        <div class="container p-3">
+            <h1 class="text-center" style="color: white; padding-top: 90px; font-size: 70px; ">CONTACT US</h1>
+            <p class="text-center"
+                style="color: white; padding-top: 30px; font-family: Encode Sans SC; padding-inline: 50px; font-size: large;">
+                home <fa-icon class="" style="font-size: small; padding-inline: 5px;" [icon]="faCaretRight"></fa-icon>
+                contact</p>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="container w-50 mt-5 mb-5">
+        <h2 style="color: #212B67; font-size: 40px; font-weight: bold; padding-bottom: 20px;">Write to us</h2>
+        <form [formGroup]="form">
+            <div class="row gx-5">
+                <div class="mb-3 col">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" formControlName='name'
+                        placeholder="Name">
+                </div>
+                <div class="mb-3 col">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" formControlName='email'
+                        placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName='subject'
+                    placeholder="Subject">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" formControlName='body'
+                    rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn mb-3 px-5" [disabled]="!form.valid" (click)="onSubmit()"
+                    style="background-color: #212B67; color: white;">Send</button>
+            </div>
+
+
+        </form>
+        <hr>
+
+        <div class="container text-center">
+            <p style="color: #212B67; font-family: Encode Sans SC;">or call the following number</p>
+            <button class="btn btn-light" (click)="copyPhone()">9999977777</button>
+        </div>
+    </div>
+    <!-- forms -->
+
+
+    <!-- footer -->
+    <div class="d-flex p-5 align-items-center justify-content-evenly"
+        style="background-color: #2e3138; min-height: 60px;">
+        <div class="align-self-start"
+            style="color: white;font-family: Encode Sans SC ; font-size:x-large; font-weight: 500; height: auto; ">Kirt
+            Enterprises</div>
+        <div class="d-block align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Office Address
+            <div class="d-block" style="font-size: medium; margin-top: 10px; color: lightgrey;">221B, Baker Street,
+            </div>
+            <div class="d-block" style="font-size: medium;color: lightgrey;">London NW1 6XE</div>
+            <div class="d-block" style="font-size: medium; margin-top: 20px;">+91 9999977777</div>
+        </div>
+        <div class="d-block align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Useful Links
+            <div class="d-block" style="font-size: medium; margin-top: 10px; color: lightgrey;"><a href="/contact"
+                    style="color: lightgrey;">Write To Us</a></div>
+            <div class="d-block" style="font-size: medium;  margin-top: 7px; color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">Our Mission</a></div>
+            <div class="d-block" style="font-size: medium;margin-top: 7px; color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">History</a></div>
+            <div class="d-block" style="font-size: medium; margin-top: 7px;color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">Our Products</a></div>
+        </div>
+        <div class="align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Follow Us On
+            <div class="d-flex justify-content-evenly" style="font-size: medium; margin-top: 10px; color: lightgrey;">
+                <a href="https://www.facebook.com/" style="color: lightgrey;">
+                    <fa-icon [icon]="faFacebook"></fa-icon>
+                </a>
+                <a href="https://www.instagram.com/" style="color: lightgrey;">
+                    <fa-icon [icon]="faInstagram"></fa-icon>
+                </a>
+                <a href="https://twitter.com/" style="color: lightgrey;">
+                    <fa-icon [icon]="faTwitter"></fa-icon>
+                </a>
+                <a href="https://in.pinterest.com/" style="color: lightgrey;">
+                    <fa-icon [icon]="faPinterest"></fa-icon>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+</div>

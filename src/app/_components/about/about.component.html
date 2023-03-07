@@ -1,0 +1,142 @@
+<!-- navbar -->
+<!-- <div class="container-fluid" style="background-color: #212B67; color: white; max-height:50px ;">hello</div> -->
+<!-- header -->
+<div class="container-fluid">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light w-100 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+                style="color: #212B67; font-family: Encode Sans SC ; font-size:large; font-weight: 700;">KK
+                Enterperises</a>
+            <button class="navbar-toggler" type="button" (click)=toggle() ngClass="menuShow" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span style="
+                    color: #212B67;
+                    border: none;
+                    ">
+                    <fa-icon [icon]="faBars"></fa-icon>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" [ngClass]="showMenu ? 'show' : 'hide'"
+                id="navbarNav" style="color: #212B67;">
+                <ul class="navbar-nav " style="font-family: Encode Sans SC ; font-size:large; font-weight: 400;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #212B67;">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about" style="color: #212B67;">about us</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact" style="color: #212B67;">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+
+    <div style="background-image: url(https://www.fabricgateway.com/images/fabricgateway/7f/7fd5fc732639cfc1631db29cb5ff20d5.jpeg);
+                height: 350px;">
+        <div class="container p-3">
+            <h1 class="text-center" style="color: white; padding-top: 90px; font-size: 70px; ">CONTACT US</h1>
+            <p class="text-center"
+                style="color: white; padding-top: 30px; font-family: Encode Sans SC; padding-inline: 50px; font-size: large;">
+                home <fa-icon class="" style="font-size: small; padding-inline: 5px;" [icon]="faCaretRight"></fa-icon>
+                about</p>
+        </div>
+    </div>
+    <div class="bg-light text-center " style="color: #212b67; padding-top: 50px; padding-inline: 40px;">
+        <h6 style="font-size: 20px; font-family: Encode Sans SC;">what we do</h6>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <div class="d-flex p-2 justify-content-evenly">
+            <div class="card bg-light" style="width: 15rem; border: none;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 100px;">
+                        <fa-icon [icon]="faTShirt"></fa-icon>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 fw-bold">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card bg-light" style="width: 15rem; border: none;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 100px;">
+                        <fa-icon [icon]="faTShirt"></fa-icon>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 fw-bold">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card bg-light" style="width: 15rem; border: none;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 100px;">
+                        <fa-icon [icon]="faTShirt"></fa-icon>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 fw-bold">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex p-3 justify-content-center bg-light">
+        <div class="p-2" style="margin-left: 30px; color:#212B67">
+            <button class="btn shadow"
+                style="background-color:#212B67;font-size: 20px; font-family: Encode Sans SC; color: white;">explore our
+                works</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="d-flex p-5 align-items-center justify-content-evenly"
+        style="background-color: #2e3138; min-height: 60px;">
+        <div class="align-self-start"
+            style="color: white;font-family: Encode Sans SC ; font-size:x-large; font-weight: 500; height: auto; ">Kirt
+            Enterprises</div>
+        <div class="d-block align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Office Address
+            <div class="d-block" style="font-size: medium; margin-top: 10px; color: lightgrey;">221B, Baker Street,
+            </div>
+            <div class="d-block" style="font-size: medium;color: lightgrey;">London NW1 6XE</div>
+            <div class="d-block" style="font-size: medium; margin-top: 20px;">+91 9999977777</div>
+        </div>
+        <div class="d-block align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Useful Links
+            <div class="d-block" style="font-size: medium; margin-top: 10px; color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">Write To Us</a></div>
+            <div class="d-block" style="font-size: medium;  margin-top: 7px; color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">Our Mission</a></div>
+            <div class="d-block" style="font-size: medium;margin-top: 7px; color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">History</a></div>
+            <div class="d-block" style="font-size: medium; margin-top: 7px;color: lightgrey;"><a href="#"
+                    style="color: lightgrey;">Our Products</a></div>
+        </div>
+        <div class="align-self-start"
+            style="color: white; margin-left: 100px; font-weight: 500;font-size:large; height: auto;">
+            Follow Us On
+            <div class="d-flex justify-content-evenly" style="font-size: medium; margin-top: 10px; color: lightgrey;">
+                <a href="#" style="color: lightgrey;">
+                    <fa-icon [icon]="faFacebook"></fa-icon>
+                </a>
+                <a href="#" style="color: lightgrey;">
+                    <fa-icon [icon]="faInstagram"></fa-icon>
+                </a>
+                <a href="#" style="color: lightgrey;">
+                    <fa-icon [icon]="faTwitter"></fa-icon>
+                </a>
+                <a href="#" style="color: lightgrey;">
+                    <fa-icon [icon]="faPinterest"></fa-icon>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+</div>
